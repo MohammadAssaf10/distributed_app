@@ -413,7 +413,7 @@ build_android() {
 
 	local build_cmd
 	if [[ "$BUILD_TYPE" == "apk" ]]; then
-		build_cmd="flutter build apk --flavor $FLAVOR --target lib/main_$FLAVOR.dart"
+		build_cmd="flutter build apk --release --flavor $FLAVOR --target lib/main_$FLAVOR.dart"
 	else
 		build_cmd="flutter build appbundle --release --flavor $FLAVOR --target lib/main_$FLAVOR.dart"
 	fi
@@ -504,14 +504,14 @@ print_summary() {
 	echo -e "${GREEN}║${NC}  ${ICON_SUCCESS} ${WHITE}Build & Distribution Completed Successfully!${NC}             ${GREEN}║${NC}"
 	echo -e "${GREEN}╠════════════════════════════════════════════════════════════════╣${NC}"
 	echo -e "${GREEN}║${NC}                                                                ${GREEN}║${NC}"
-	echo -e "${GREEN}║${NC}  ${ICON_PACKAGE} Artifact Type:  ${CYAN}$build_type_upper${NC}                                     ${GREEN}║${NC}"
-	echo -e "${GREEN}║${NC}  ${ICON_BUILD} Flavor:         ${CYAN}${FLAVOR}${NC}                              ${GREEN}║${NC}"
-	echo -e "${GREEN}║${NC}  ${ICON_INFO}  Version:        ${CYAN}${VERSION_NAME} (${VERSION_CODE})${NC}                    ${GREEN}║${NC}"
-	echo -e "${GREEN}║${NC}  ${ICON_TIME}  Duration:       ${CYAN}${minutes}m ${seconds}s${NC}                              ${GREEN}║${NC}"
+	echo -e "${GREEN}║${NC}  ${ICON_PACKAGE} Artifact Type:  ${CYAN}$build_type_upper${NC}           	                          ${GREEN}║${NC}"
+	echo -e "${GREEN}║${NC}  ${ICON_BUILD} Flavor:         ${CYAN}${FLAVOR}${NC}                        	      ${GREEN}║${NC}"
+	echo -e "${GREEN}║${NC}  ${ICON_INFO}  Version:        ${CYAN}${VERSION_NAME} (${VERSION_CODE})${NC}    			                ${GREEN}║${NC}"
+	echo -e "${GREEN}║${NC}  ${ICON_TIME}  Duration:       ${CYAN}${minutes}m ${seconds}s${NC}                          		    ${GREEN}║${NC}"
 	echo -e "${GREEN}║${NC}                                                                ${GREEN}║${NC}"
 	echo -e "${GREEN}╠════════════════════════════════════════════════════════════════╣${NC}"
-	echo -e "${GREEN}║${NC}  ${ICON_UPLOAD} ${YELLOW}Testers will receive download notification${NC}               ${GREEN}║${NC}"
-	echo -e "${GREEN}║${NC}  ${ICON_FIRE}  ${YELLOW}View in Firebase Console:${NC}                                ${GREEN}║${NC}"
+	echo -e "${GREEN}║${NC}  ${ICON_UPLOAD} ${YELLOW}Testers will receive download notification${NC}          	     ${GREEN}║${NC}"
+	echo -e "${GREEN}║${NC}  ${ICON_FIRE}  ${YELLOW}View in Firebase Console:${NC}                                 ${GREEN}║${NC}"
 	echo -e "${GREEN}║${NC}  ${GRAY}https://console.firebase.google.com/project/_/appdistribution${NC} ${GREEN}║${NC}"
 	echo -e "${GREEN}║${NC}                                                                ${GREEN}║${NC}"
 	echo -e "${GREEN}╚════════════════════════════════════════════════════════════════╝${NC}"

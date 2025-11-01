@@ -48,6 +48,9 @@ buildDevelopmentAndDistributed:
 buildStagingAndDistributed:
 	./build_and_distribute_android.sh staging apk com.example.distributed_app.staging "First APK Release"
 
+buildProductionAndDistributed:
+	./build_and_distribute_android.sh production apk com.example.distributed_app "First APK Release"
+
 #Git
 
 #make commit_and_push <commit_message> branch_name=branch_name
