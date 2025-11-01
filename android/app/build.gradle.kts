@@ -40,6 +40,26 @@ android {
             signingConfig = signingConfigs.getByName("debug")
         }
     }
+    flavorDimensions += "default"
+    productFlavors {
+        create("development") {
+            dimension = "default"
+            resValue(type = "string", name = "app_name", value = "Distributed App development")
+            namespace = "com.example.distributed_app.dev"
+            applicationId = "com.example.distributed_app.dev"
+        }
+        create("staging") {
+            dimension = "default"
+            resValue(type = "string", name = "app_name", value = "Distributed App staging")
+            namespace = "com.example.distributed_app.staging"
+            applicationId = "com.example.distributed_app.staging"
+        }
+        create("production") {
+            dimension = "default"
+            resValue(type = "string", name = "app_name", value = "Distributed App")
+            namespace = "com.example.distributed_app"
+        }
+    }
 }
 
 flutter {

@@ -8,7 +8,7 @@ import 'package:flutter/foundation.dart'
 ///
 /// Example:
 /// ```dart
-/// import 'firebase_options.dart';
+/// import 'firebase_optioins_dev.dart';
 /// // ...
 /// await Firebase.initializeApp(
 ///   options: DefaultFirebaseOptions.currentPlatform,
@@ -51,7 +51,7 @@ class DefaultFirebaseOptions {
 
   static const FirebaseOptions android = FirebaseOptions(
     apiKey: 'AIzaSyBtRHbxJlRGkKWf1zGMDCZVIBqRGlFS-8o',
-    appId: '1:947922456605:android:b70058d9bcfa881a0436f4',
+    appId: '1:947922456605:android:36ea963012d167950436f4',
     messagingSenderId: '947922456605',
     projectId: 'distributed-app-ae59f',
     storageBucket: 'distributed-app-ae59f.firebasestorage.app',
@@ -59,11 +59,10 @@ class DefaultFirebaseOptions {
 
   static const FirebaseOptions ios = FirebaseOptions(
     apiKey: 'AIzaSyCpjRiu_0oKeyVTsTKZoaCGzZ6g40NopLk',
-    appId: '1:947922456605:ios:b1ed11ebe6f3b30d0436f4',
+    appId: '1:947922456605:ios:180fbbba661058770436f4',
     messagingSenderId: '947922456605',
     projectId: 'distributed-app-ae59f',
     storageBucket: 'distributed-app-ae59f.firebasestorage.app',
-    iosBundleId: 'com.example.distributedApp',
+    iosBundleId: 'com.example.distributedApp.dev',
   );
-
 }

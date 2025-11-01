@@ -7,9 +7,47 @@
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:947922456605:android:57b9f8d1c3d8157d0436f4",
+        "mobilesdk_app_id": "1:947922456605:android:b70058d9bcfa881a0436f4",
         "android_client_info": {
           "package_name": "com.example.distributed_app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBtRHbxJlRGkKWf1zGMDCZVIBqRGlFS-8o"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:947922456605:android:36ea963012d167950436f4",
+        "android_client_info": {
+          "package_name": "com.example.distributed_app.dev"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBtRHbxJlRGkKWf1zGMDCZVIBqRGlFS-8o"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:947922456605:android:e3b259c673b4ef2e0436f4",
+        "android_client_info": {
+          "package_name": "com.example.distributed_app.staging"
         }
       },
       "oauth_client": [],
