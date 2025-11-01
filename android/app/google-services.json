@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "947922456605",
+    "project_id": "distributed-app-ae59f",
+    "storage_bucket": "distributed-app-ae59f.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:947922456605:android:57b9f8d1c3d8157d0436f4",
+        "android_client_info": {
+          "package_name": "com.example.distributed_app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBtRHbxJlRGkKWf1zGMDCZVIBqRGlFS-8o"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
